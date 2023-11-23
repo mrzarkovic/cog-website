@@ -19,7 +19,7 @@
             <div class="navbar bg-base-200">
                 <div class="container mx-auto">
                     <div class="flex-1">
-                        <span class="text-xl font-semibold">Cog</span>
+                        <span class="text-xl p-2 font-semibold">Cog</span>
                     </div>
                     <div class="flex-none">
                         <ul class="menu menu-horizontal px-1">
@@ -53,31 +53,30 @@
                 </div>
             </div>
             <section
-                class="relative flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 overflow-hidden"
+                class="relative flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8"
             >
                 <div class="z-10 py-6 lg:py-20">
-                    <div
-                        class="text-8xl font-bold leading-normal tracking-tight [&::selection]:text-base-content relative col-start-1 row-start-1 bg-[linear-gradient(90deg,theme(colors.error)_0%,theme(colors.secondary)_9%,theme(colors.secondary)_42%,theme(colors.primary)_47%,theme(colors.accent)_100%)] bg-clip-text [-webkit-text-fill-color:transparent] [&::selection]:bg-blue-700/20 [@supports(color:oklch(0_0_0))]:bg-[linear-gradient(90deg,oklch(var(--s))_4%,color-mix(in_oklch,oklch(var(--s)),oklch(var(--er)))_22%,oklch(var(--p))_45%,color-mix(in_oklch,oklch(var(--p)),oklch(var(--a)))_67%,oklch(var(--a))_100.2%)]"
+                    <h1
+                        class="text-6xl lg:text-8xl font-bold leading-snug lg:leading-normal tracking-tight bg-[linear-gradient(90deg,theme(colors.error)_0%,theme(colors.secondary)_9%,theme(colors.secondary)_42%,theme(colors.primary)_47%,theme(colors.accent)_100%)] bg-clip-text [-webkit-text-fill-color:transparent] [&::selection]:bg-blue-700/20 [@supports(color:oklch(0_0_0))]:bg-[linear-gradient(90deg,oklch(var(--s))_4%,color-mix(in_oklch,oklch(var(--s)),oklch(var(--er)))_22%,oklch(var(--p))_45%,color-mix(in_oklch,oklch(var(--p)),oklch(var(--a)))_67%,oklch(var(--a))_100.2%)]"
                     >
                         Welcome to Cog
-                    </div>
+                    </h1>
                     <div class="pt-2">
-                        <div class="flex justify-center align-middle">
-                            <div
-                                class="inline-block leading-8 animate-[spin_6s_linear_infinite]"
+                        <p class="text-xl leading-normal">
+                            <span
+                                class="inline-block h-8 w-8 leading-8 -mr-1 nimate-[spin_6s_linear_infinite]"
+                                >⚙️</span
                             >
-                                ⚙️
-                            </div>
-                            <p class="text-xl pl-1 leading-normal inline-block">
-                                A simple, reactive expression library with zero
-                                dependencies.
-                            </p>
-                        </div>
+                            <span
+                                >A simple, reactive expression library with zero
+                                dependencies.</span
+                            >
+                        </p>
                     </div>
                 </div>
             </section>
-            <section class="container max-w-7xl mx-auto p-8 mb-40">
-                <div class="flex justify-between pb-8">
+            <section class="container max-w-7xl mx-auto p-8 mb-10 lg:mb-40">
+                <div class="flex flex-col lg:flex-row lg:justify-between pb-8">
                     <div class="prose">
                         <h2 class="text-4xl">Beginner-friendly</h2>
                         <p>
@@ -88,8 +87,8 @@
                             coming from a background of HTML and CSS.
                         </p>
                     </div>
-                    <div class="grow px-8">
-                        <div class="mockup-code w-full">
+                    <div class="grow py-8 lg:px-8 lg:py-0">
+                        <div class="mockup-code">
                             <pre
                                 data-prefix="1"
                             ><code>&lt;!-- index.html --&gt;</code></pre>
@@ -108,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex flex-col lg:flex-row lg:justify-between">
                     <div class="prose">
                         <h2 class="text-4xl">HTML is HTML</h2>
                         <p>
@@ -119,7 +118,7 @@
                             makes modern web apps feel smooth and responsive.
                         </p>
                     </div>
-                    <div class="grow px-8">
+                    <div class="grow py-8 lg:px-8 lg:py-8">
                         <div class="mockup-browser bg-base-300">
                             <div class="mockup-browser-toolbar">
                                 <div class="input">https://cog.example.app</div>
