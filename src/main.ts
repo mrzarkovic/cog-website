@@ -1,5 +1,7 @@
 import { variable } from "@mzrk/cog";
 
-const counter = variable("counter", 0);
+const counter = variable("counter", 42);
 
-console.log(counter.value);
+variable("increment", () => {
+    counter.set(counter.value + 1);
+});
