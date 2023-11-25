@@ -1,0 +1,33 @@
+{
+    "name": "Cog",
+    "short_name": "Cog",
+    "description": "A simple, reactive expression library with zero dependencies.",
+    "start_url": "",
+    "display": "standalone",
+    "background_color": "#121c22",
+    "theme_color": "#0e171e",
+    "icons": [
+        {
+            "src": "icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "maskable_iconx512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "maskable_iconx192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
