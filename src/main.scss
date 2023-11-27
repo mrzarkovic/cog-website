@@ -1,0 +1,15 @@
+@use "@fontsource/outfit/scss/mixins" as Outfit;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cogSvg {
+    clip-path: url(#cogClip);
+}
+
+@include Outfit.faces(
+    $weights: (
+        600,
+    ),
+    $display: optional
+);
