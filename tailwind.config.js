@@ -13,8 +13,17 @@ module.exports = {
                 "gradient-y": "gradient-y 15s ease infinite",
                 "-gradient-x": "-gradient-x 15s ease infinite",
                 "gradient-xy": "gradient-xy 15s ease infinite",
+                fadein: "fadein .3s ease-in-out",
             },
             keyframes: {
+                fadein: {
+                    "0%": {
+                        opacity: "0",
+                    },
+                    "100%": {
+                        opacity: "1",
+                    },
+                },
                 "gradient-y": {
                     "0%, 100%": {
                         "background-size": "400% 400%",
