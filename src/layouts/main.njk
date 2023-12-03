@@ -1,0 +1,16 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Cog</title>
+        <link rel="stylesheet" href="/src/styles/main.scss" />
+    </head>
+    <body>
+        <div id="app">
+            <% include 'partials/navbar.njk' %> <% block app %><% endblock %> <%
+            include 'partials/footer.njk' %>
+        </div>
+        <% block script %><% endblock %>
+        <script type="module" src="/src/scripts/main.ts"></script>
+    </body>
+</html>

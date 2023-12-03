@@ -1,0 +1,70 @@
+<% extends 'layouts/main.njk' %> <% block app %>
+
+<div class="container mx-auto">
+    <div class="max-w-6xl mx-auto px-6 xl:px-0">
+        <section class="py-8 mb-10 lg:mb-30">
+            <div class="prose">
+                <h1 class="text-4xl">About Cog</h1>
+                <p>
+                    Cog is a simple, beginner-friendly reactive expression
+                    library designed to provide a reactive programming
+                    experience using plain HTML and vanilla JavaScript. It's an
+                    excellent tool for learning because it combines the benefits
+                    of both imperative and declarative programming styles.
+                </p>
+                <p>
+                    Imperative programming is about writing code that describes
+                    in detail the steps that the computer must take to
+                    accomplish the goal. This is how JavaScript typically works.
+                    In Cog, you use imperative programming when you define
+                    functions and manipulate variables.
+                </p>
+                <p>
+                    Declarative programming, on the other hand, is about writing
+                    code that describes what you want to accomplish, without
+                    necessarily detailing how. This is how HTML typically works.
+                    In Cog, you use declarative programming when you write your
+                    HTML templates.
+                </p>
+                <p>
+                    By combining these two styles, Cog allows you to write
+                    JavaScript that directly manipulates the state of your
+                    application (imperative), and HTML that automatically
+                    updates to reflect the current state of the application
+                    (declarative). This combination makes your code easier to
+                    understand and reason about.
+                </p>
+                <p>
+                    Furthermore, Cog's simplicity and lack of dependencies make
+                    it a great stepping stone to more complex libraries and
+                    frameworks. It allows you to focus on learning the core
+                    concepts of reactive programming without getting overwhelmed
+                    by additional dependencies or complex tooling. All you need
+                    is vanilla JavaScript.
+                </p>
+                <p>In summary, Cog is a great tool for learning because it:</p>
+                <ul>
+                    <li>
+                        Combines the benefits of both imperative and declarative
+                        programming styles.
+                    </li>
+                    <li>
+                        Provides a simple, intuitive API with zero dependencies.
+                    </li>
+                    <li>
+                        Allows you to focus on learning the core concepts of
+                        reactive programming.
+                    </li>
+                    <li>
+                        Serves as a stepping stone to more complex libraries and
+                        frameworks.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+<% endblock %> <% block script %>
+<script type="module" src="/src/scripts/about.ts"></script>
+<% endblock %>

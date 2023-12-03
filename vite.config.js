@@ -1,13 +1,29 @@
+import vituum from "vituum";
+import postcss from "@vituum/vite-plugin-postcss";
+import tailwindcss from "@vituum/vite-plugin-tailwindcss";
+import nunjucks from "@vituum/vite-plugin-nunjucks";
+
 export default {
-    root: "./src",
-    base: "",
     build: {
-        rollupOptions: {
-            input: {
-                main: "./src/index.html",
-                about: "./src/about.html",
-            },
-        },
-        outDir: "../docs",
+        outDir: "docs",
+        emptyOutDir: false,
     },
+    plugins: [
+        vituum(),
+        postcss(),
+        tailwindcss(),
+        nunjucks({
+            root: "./src",
+            options: {
+                tags: {
+                    blockStart: "<%",
+                    blockEnd: "%>",
+                    variableStart: "<$",
+                    variableEnd: "$>",
+                    commentStart: "<#",
+                    commentEnd: "#>",
+                },
+            },
+        }),
+    ],
 };
