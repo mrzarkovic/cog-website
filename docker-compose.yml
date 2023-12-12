@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    cog-website:
+        image: nginx:1.24
+        volumes:
+            - ./docs/:/usr/share/nginx/html
+        restart: always
+        networks:
+            - cog-web
+
+networks:
+    cog-web:
+        external: true

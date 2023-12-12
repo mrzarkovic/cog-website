@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+    cog-website:
+        labels:
+            - "traefik.http.routers.router0.rule=Host(`cogjs.org`)"
+            - "traefik.http.routers.router0.tls=true"
+            - "traefik.http.routers.router0.tls.certresolver=myresolver"
